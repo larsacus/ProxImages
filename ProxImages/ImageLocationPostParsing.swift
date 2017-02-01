@@ -56,12 +56,6 @@ extension ImageLocationPost {
             throw ImageLocationPostError.MissingData(.username)
         }
         
-        /** Parse distance */
-        // No distance parameter for WikiMedia data
-//        guard let distanceNumber = data[ImageLocationPostKey.distance.rawValue] as? Double else {
-//            throw ImageLocationPostError.MissingData(.distance)
-//        }
-        
         /** Parse thumbnail data */
         guard let thumbnailImageURLString = imageInfo[ImageLocationPostKey.thumburl.rawValue] as? String,
             let thumbnailImageURL = URL(string: thumbnailImageURLString) else {
