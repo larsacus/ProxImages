@@ -2,7 +2,7 @@
 
 ProxImages is very simple. It will present the user with a map near their current location, as well as an overlay indicating a search radius. Tapping on the map anywhere will initiate a search through the WikiMedia API to find images near that tapped location. A visual indicator of the search radius being used is shown as an overlay on the map. Tapping the map will transiently update the radius overlay to the searched location before searching in that spot.
 
-![Map View](img/ProxImages1.png) ![Results View](img/ProxImages2.png)
+![Map View](img/ProxImages1.png)![Results View](img/ProxImages2.png)
 
 The original requirement was to use the Instagram API to perform geo-searches, but since June 2016, Instagram has restricted their API for requests that require `public_content` scope to "production" API keys only. In order to get a production API key and get out of sandboxing mode, you must go through Instagram's review and submission process. https://medium.com/@emersonthis/instagram-on-websites-the-new-landscape-62c91d733894#.41x3jq16x
 
